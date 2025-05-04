@@ -154,6 +154,13 @@ const PromptManagement = () => {
       },
     },
     {
+      title: 'Score',
+      dataIndex: 'score',
+      key: 'score',
+      width: 100,
+      render: (score) => score !== undefined && score !== null ? score : '-', // Display score or '-' if not available
+    },
+    {
       title: '状态',
       dataIndex: 'status',
       key: 'status',
